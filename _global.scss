@@ -1,0 +1,54 @@
+// Global styles
+
+body {
+	font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: $gray-darkest;
+	color: $white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', "Trebuchet MS", Verdana, Helvetica, sans-serif;
+}
+
+a {
+	color: white;
+	&:hover {
+		color: $gj-pink;
+	}
+}
+
+[role="main"] {
+	color: $gray-darker;
+	padding: 10px;
+	background-color: $white;
+	margin-top: 71px;
+}
+
+.footer-parent {
+	margin-right: 350px;
+}
+
+.md {
+	li {
+		margin-left: 20px;
+	}
+}
+
+.score.likes {
+	color: $gj-pink;
+}
+.arrow.up {
+	background: url(%%unliked%%);
+}
+.arrow.upmod {
+	background: url(%%upvote%%);
+}
+.score.dislikes {
+	color: $gj-blue;
+}
+.arrow.down {
+	background: url(%%unliked%%);
+}
+.arrow.downmod {
+	background: url(%%downvote%%);
+}

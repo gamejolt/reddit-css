@@ -1,0 +1,48 @@
+// Flair
+
+.flair {
+	border: 0;
+	background: none;
+	color: $gray-lighter;
+	&:before {
+		content: '';
+		border: none;
+		background: url(%%spritesheet%%);
+		padding: 0px;
+		display: inline-block;
+		width: 25px;
+		height: 20px;
+		margin: 0.5px 5px;
+		position: relative;
+		top: 5px;
+	}
+}
+
+.flair-bouaaaaah:before { background-position: 0 0; } 
+.flair-crossed:before { background-position: 0 -40px; } 
+.flair-crying:before { background-position: 0 -80px; } 
+.flair-dizzy:before { background-position: 0 -120px; } 
+.flair-eyes-on-fire:before { background-position: 0 -160px; } 
+.flair-grin:before { background-position: 0 -200px; } 
+.flair-guh:before { background-position: 0 -240px; } 
+.flair-huh:before { background-position: 0 -280px; } 
+.flair-innocent:before { background-position: 0 -320px; } 
+.flair-mah:before { background-position: 0 -360px; } 
+.flair-ninja:before { background-position: 0 -400px; } 
+.flair-oh-u:before { background-position: 0 -440px; } 
+.flair-omg:before { background-position: 0 -480px; } 
+.flair-ouch:before { background-position: 0 -520px; } 
+.flair-psychotic:before { background-position: 0 -560px; } 
+.flair-sleeping:before { background-position: 0 -600px; } 
+.flair-smile:before { background-position: 0 -640px; } 
+.flair-snooty:before { background-position: 0 -680px; } 
+.flair-tongue:before { background-position: 0 -720px; } 
+.flair-yush:before { background-position: 0 -760px; } 
+.flair-davicon:before { background: url(%%davicon%%); width: 32px; height: 32px; margin: 0; }
+
+.linkflairlabel {
+	color: $white;
+	text-shadow: 0px 0px $black;
+	background-color: $gj-pink;
+	text-transform: uppercase;
+}

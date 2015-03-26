@@ -1,0 +1,221 @@
+// Sidebar
+
+.side {
+	position: fixed;
+	top: 0;
+	right: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 300px;
+	height: 2000px;
+	background-color: $gray-darker;
+	color: $gray-light;
+	border-left: 2px solid $black;
+	border-bottom: 10px solid $black;
+	padding-top: 71px;
+	.spacer:last-child {
+		height: 2000px;
+	}
+	.linkinfo {
+		background-color: $gray-lightest;
+		color: $gray-light;
+		border: 0;
+		margin: 10px;
+		padding: 10px;
+		border-radius: 0;
+	}
+	.morelink {
+		background: none;
+		border: 0;
+		letter-spacing: normal;
+		line-height: normal;
+		height: auto;
+		a {
+			width: auto;
+			text-align: left;
+			transition: padding-left 0.2s;
+			padding: 14px 0;
+			padding-left: 20px;
+			font-weight: 400;
+			font-size: 14px;
+			color: $gray-lighter;
+		}
+		&:hover {
+			background-color: $gray-dark;
+			a {
+				color: $white;
+				padding-left: 40px;
+			}
+			&::before {
+				width: 8px;
+			}
+		}
+		&::before {
+			transition: width 0.2s;
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			bottom: 0;
+			width: 3px;
+			background-color: $gj-green;
+		}
+		.nub {
+			display: none;
+		}
+	}
+	.titlebox {
+		text-align: center;
+		.redditname {
+			margin-bottom: 30px;
+			margin-top: -10px;
+			margin-right: 84px;
+			transition: margin-right 0.5s;
+			a {
+				color: white;
+				font-size: 0px;
+				&:hover {
+					color: $gj-pink;
+				}
+				&:before {
+					background: url(%%kikkerstein%%);
+					opacity: 1;
+					transition: 0.5s;
+					position: absolute;
+					right: 10px;
+					content: '';
+					height: 114px;
+					width: 84px;
+				}
+				&:after {
+					font-weight: 300;
+					content: 'Game Jolt';
+					display: block;
+					font-size: 32px;
+				}
+			}
+			&:after {
+				font-weight: 400;
+				font-size: 14px;
+				content: 'The official subreddit';
+			}
+		}
+		.word {
+			display: none;
+		}
+		.subscribers:after {
+			content: ' Game Jolters';
+		}
+		.users-online:after {
+			content: ' people playing FNAF clones';
+		}
+		.usertext {
+			padding-top: 10px;
+			width: auto;
+			.md {
+				text-align: left;
+				color: $gray-lighter;
+				a {
+					color: white;
+					&:hover {
+						color: $gj-pink;
+					}
+				}
+				> * {
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+				h1 {
+					font-family: "Open Sans","Trebuchet MS",Verdana,Helvetica,sans-serif;
+					text-transform: uppercase;
+					background-color: $gray-darkest;
+					padding: 10px;
+					color: $gray-lightest;
+					font-weight: 700;
+					font-size: 14px;
+				}
+			}
+		}
+		.number {
+			color: $white;
+		}
+		.users-online {
+			margin-bottom: 20px;
+			&:before {
+				display: none;
+			}
+		}
+		#subButtons-gamejolt {
+			height: 0px;
+			transition: height 0.3s;
+			overflow: hidden;
+		}
+		&:hover {
+			#subButtons-gamejolt {
+				height: 25px;
+			}
+			.redditname {
+				margin-right: 0px;
+				a:before {
+					opacity: 0;
+					right: -100px;
+				}
+			}
+		}
+		.leavemoderator {
+			background: none;
+			color: $gj-blue;
+			&:before {
+				display: none;
+			}
+		}
+		.toggle.flairtoggle {
+			background: none;
+		}
+	}
+	.sidebox.create .spacer {
+		display: none;
+	}
+	.sidecontentbox {
+		width: auto;
+		.title {
+			background-color: $gray-darkest;
+			padding: 10px;
+			h1 {
+				color: $gray-lightest;
+				font-weight: 700;
+				font-size: 14px;
+			}
+		}
+		.content {
+			padding: 10px;
+			border: 0;
+		}
+	}
+	#moderation_tools {
+		.collapse-button {
+			display: none;
+		}
+		.content {
+			height: 0px;
+			overflow: hidden;
+			transition: height 0.5s;
+		}
+		&:hover {
+			.content {
+				height: 569px;
+			}
+		}
+	}
+	.icon-menu a {
+		background: none;
+		color: $gray-light;
+		display: block;
+		padding: 10px;
+		&:hover {
+			background-color: $gray-dark;
+			color: $gray-lighter;
+			text-decoration: none;
+		}
+	}
+}

@@ -1,0 +1,61 @@
+// Header
+
+#header {
+	position: fixed;
+	top: 0;
+	background-color: $gray-darkest;
+	border-bottom: 2px solid $black;
+	padding: 20px 0px;
+	width: 100%;
+	color: $gray-light;
+	a {
+		color: $gray-light;
+	}
+	#sr-header-area, .redditname {
+		display: none;
+	}
+	#header-img {
+		padding-left: 10px;
+	}
+	.tabmenu {
+		margin-left: 20px;
+		li {
+			&:nth-child(n+5) {
+				display: none;
+			}
+			a {
+				position: relative;
+				top: -10px;
+				color: $gray-light;
+				background: none;
+				font-weight: 400;
+				padding: 15px 15px;
+				&:hover {
+					background-color: $gray-dark;
+					color: $gray-lighter;
+				}
+			}
+			&.selected {
+				a {
+					border: 0;
+					background-color: $gj-dark-green;
+					color: $gj-green;
+				}
+			}
+		}
+	}
+	#header-bottom-right {
+		position: absolute;
+		right: 10px;
+		background: none;
+		#userbarToggle {
+			background: none;
+			border: 0;
+			color: $gray-light;
+		}
+	}
+}
+
+.infobar.welcome {
+	display: none !important;
+}
